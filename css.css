@@ -1,0 +1,18 @@
+html {margin: 0; padding: 0;}
+.container {
+	padding: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 26px;
+}
+.parallax-window {
+	background: transparent;
+	min-height: 600px;
+}
+.parallax-data {
+	padding: 100px 50px;
+	font: 30px;
+	color: white;
+	z-index: 2;
+	position: relative;
+}
