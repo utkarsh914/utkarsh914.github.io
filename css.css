@@ -1,4 +1,4 @@
-html {margin: 0; padding: 0;}
+html {margin: 0px; padding: 0px;}
 .container {
 	padding: 50px;
 	width: 100%;
@@ -7,12 +7,22 @@ html {margin: 0; padding: 0;}
 }
 .parallax-window {
 	background: transparent;
-	min-height: 600px;
+	min-height: 1200px;
+	width: 100%;
+}
+.parallax-window-child {
+	text-align: center;
+	background: transparent;
+	height: 1000px;
+	width: 100%;
 }
 .parallax-data {
 	padding: 100px 50px;
-	font: 30px;
 	color: white;
-	z-index: 2;
+	background: transparent;
+	font-size: 40px;
+	text-align: center;
 	position: relative;
+	top: 25%;
+	z-index: 3;
 }
