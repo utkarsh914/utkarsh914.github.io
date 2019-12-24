@@ -1,0 +1,28 @@
+body {padding: 0; margin: 0; text-align: center;}
+.container-home{ height: 100vh; text-align: center; background-image: url('images/background_final.jpg'); background-size: cover;}
+.intro-heading{ display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff; }
+.intro-heading h1 {font-size: 55px;}
+.intro-heading p { font-size: 18px; }
+
+.about {padding: 64px 0 40px 0}
+.about-conferenza { padding-left: 40px; padding-right: 40px; }
+.about-img { float: left; width: 55%; background-image: url('images/intro.jpg'); background-size: cover; background-repeat: no-repeat; height: 400px;}
+.about-text { float: left; width: 45%; padding: 0px 0px 16px 48px; }
+@media screen and (max-width: 876px) {
+	.about-img { width: 100%; }
+	.about-text { width: 100%; padding: 32px 0px 0px;}
+}
+
+.speakers { padding: 32px 16px 32px 16px; }
+.card { width: 100%; height: 300px; order-radius: 20px 20px 0px 0px; background-size: cover; background-repeat: no-repeat; }
+.card-container { position: relative; }
+.card-container h3 { color: #5b32b4; }
+.card-container p { color: #726a84; margin-top: 0px; }
+
+/*.overlay-info { position: absolute; z-index: 5; height: 300px; background: #5b32b4; transition: transform 0.5s linear; display: none;}
+.overlay-info > div { position: relative; z-index: 5; top: 50%; transform: translateY(-50%);}
+@keyframes card-info-glow {
+	from {display: none;}
+	to {display: block;}
+}
+.card-container:hover .overlay-info { animation: card-info-glow 0.3s linear; animation-fill-mode: forwards;}*/
