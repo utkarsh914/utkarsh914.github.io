@@ -2,11 +2,27 @@ body {padding: 0; margin: 0; text-align: center;}
 .container-home{ height: 100vh; text-align: center; background-image: url('images/background_final.jpg'); background-size: cover;}
 .intro-heading{ display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff; }
 .intro-heading h1 {font-size: 55px;}
+.intro-heading h3 {font-size: 24px;}
 .intro-heading p { font-size: 18px; }
 
-.about {padding: 64px 0 40px 0}
+.main-header-container {width: 450px; position: relative; left: 50%; transform: translateX(-50%); border-radius: 5px; margin-bottom: 64px;}
+@media screen and (max-width: 470px) {
+	.main-header-container {width: 400px;}
+}
+@media screen and (max-width: 420px) {
+	.intro-heading h1 {font-size: 45px;}
+	.intro-heading h3 {font-size: 20px;}
+	.main-header-container {width: 100%; border-radius: 0px;}
+	.main-header-container>h2 {font-size: 150%!important;}
+	.about-conferenza { padding-left: 8px!important; padding-right: 8px!important; }
+}
+
+.row-container {padding: 16px 24px!important;}
+
+
+.about {padding: 64px 16px 40px 16px!important}
 .about-conferenza { padding-left: 40px; padding-right: 40px; }
-.about-img { float: left; width: 55%; background-image: url('images/intro.jpg'); background-size: cover; background-repeat: no-repeat; height: 400px;}
+.about-img { float: left; width: 55%; background-image: url('images/intro-img.jpg'); background-size: cover; background-repeat: no-repeat; height: 350px;}
 .about-text { float: left; width: 45%; padding: 0px 0px 16px 48px; }
 @media screen and (max-width: 876px) {
 	.about-img { width: 100%; }
