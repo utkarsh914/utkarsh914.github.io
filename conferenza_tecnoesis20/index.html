@@ -2,13 +2,38 @@
 <html>
 <head>
 	<title>Conferenza | Tecnoesis</title>
+	<link rel="icon" href="images/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="w3.css">
+	<script src="https://kit.fontawesome.com/829418fca4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container-home">
+		<!-- navbar start -->
+		<div class="nav-container">
+			<div class="bar-item" style="float: left;"><img src="images/logo-nav.png" height="60px" width="220px"></div>
+			<div class="nav-bar w3-text-white">
+				<div class="bar-item"><a href="#about">About</a></div>
+				<div class="bar-item"><a href="#speakers">Our Guests</a></div>
+				<div class="bar-item"><a href="#prev-speakers">Previous Speakers</a></div>
+				<div class="bar-item"><a href="#contact">Contact Us</a></div>	
+			</div>
+
+			<button id="hamburger-toggle" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
+			
+			<div class="w3-sidebar w3-bar-block w3-collaps w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+				<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+				<a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">About</a>
+				<a href="#speakers" class="w3-bar-item w3-button" onclick="w3_close()">Our Guests</a>
+				<a href="#prev-speakers" class="w3-bar-item w3-button" onclick="w3_close()">Previous Speakers</a>
+				<a href="#contact" class="w3-bar-item w3-button" onclick="w3_close()">Contact</a>
+			</div>
+
+
+		</div>
+		<!-- navbar end -->
 		<div class="intro-heading">
 			<h3>TECNOESIS PRESENTS</h3>
 			<h1>CONFERENZA</h1>
@@ -18,7 +43,7 @@
 
 	<div class="about" id="about">
 
-		<div class="main-header-container w3-padding w3-indigo w3-card w3-hover-shadow">
+		<div class="main-header-container w3-padding w3-black w3-card w3-hover-shadow">
 			<h2>ABOUT CONFERENZA</h2>
 		</div>
 
@@ -34,10 +59,10 @@
 		</div>
 	</div>
 
-	<!--     speakers start     -->
+	<!--		 speakers start		 -->
 	<div class="speakers w3-center" id="speakers">
 
-		<div class="main-header-container w3-padding w3-indigo w3-card">
+		<div class="main-header-container w3-padding w3-black w3-card">
 			<h2>OUR SPEAKERS</h2>
 		</div>
 
@@ -133,13 +158,13 @@
 		</div>
 
 	</div>
-	<!--     speakers end     -->
+	<!--		 speakers end		 -->
 
 
-	<!--     prev speakers start     -->
+	<!--		 prev speakers start		 -->
 	<div class="speakers w3-center" id="prev-speakers">
 
-		<div class="main-header-container w3-padding w3-indigo w3-card">
+		<div class="main-header-container w3-padding w3-black w3-card">
 			<h2>PREVIOUS SPEAKERS</h2>
 		</div>
 
@@ -235,10 +260,10 @@
 		</div>
 
 	</div>
-	<!--     prev speakers end     -->
+	<!--		 prev speakers end		 -->
 
-	<div class="contact w3-center">
-		<div class="main-header-container w3-padding w3-indigo w3-card">
+	<div class="contact w3-center" id="contact">
+		<div class="main-header-container w3-padding w3-black w3-card">
 			<h2>CONTACT US</h2>
 		</div>
 
@@ -246,22 +271,41 @@
 			<div class="w3-third">
 				<h2>Address</h2>
 				<p>NIT Road, Fakiratilla, Silchar, Assam 788010</p>
+				<hr>
 			</div>
 			<div class="w3-third">
 				<h2>Contact</h2>
-				<p>+91-9571820563</p>
+				<img src="images/Apoorv.jpg" style="width: 170px; height: 170px; border-radius: 50%;">
+				<p>
+					Apoorv Singh <br/><br>
+					<!-- +91-xxxxxxxxxx <br/><br> -->
+					<a href="https://www.facebook.com/apoorvsingh1999"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.linkedin.com/in/apoorvsingh1999/"><i class="fab fa-linkedin-in"></i></a>
+				</p>
+				<hr>
 			</div>
 			<div class="w3-third">
 				<h2>Website</h2>
 				<a href="https://www.tecnoesis.org/" style="text-decoration: none; "><p>www.tecnoesis.org</p></a>
+				<hr>
 			</div>
 		</div>
 	</div>
 
 
-	<footer class="w3-container w3-padding-64 w3-indigo" style="margin-top: 64px;">
+	<footer class="w3-container w3-padding-48 w3-black" style="margin-top: 40px;">
 		<p>&copy TECNOESIS 2020</p>
 	</footer>
+
+<script>
+function w3_open() {
+	document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+	document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>

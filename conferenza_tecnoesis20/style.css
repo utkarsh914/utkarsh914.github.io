@@ -1,13 +1,33 @@
 body {padding: 0; margin: 0; text-align: center; font-family: 'Cabin', sans-serif!important; background: rgb(255, 254, 254);}
+a {text-decoration: none;}
 .container-home{ height: 100vh; text-align: center; background-image: url('images/background_final.jpg'); background-size: cover;}
+
+.nav-container { display: inline-block; padding: 0px 16px; width: 100%; position: fixed; left: 0; top: 0; background: black; z-index: 999;}
+.nav-bar {display: inline-block; height: 60px;}
+.bar-item { display: inline-block; height: 60px; float: left; padding: 8px 16px; line-height: 60px; font-size: 18px;}
+#hamburger-toggle {display: none!important;}
+#mySidebar {display: none;}
+@media screen and (max-width: 850px) {
+	.nav-bar {display: none;}
+	#hamburger-toggle {display: block!important;}
+	.card {height: 250px!important;}
+}
+
 .intro-heading{ display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff; }
 .intro-heading h1 {font-size: 55px;}
 .intro-heading h3 {font-size: 24px;}
 .intro-heading p { font-size: 18px; }
 
+@media screen and (min-width: 1000px) {
+	.intro-heading h1 {font-size: 75px;}
+	.intro-heading h3 {font-size: 34px;}
+	.intro-heading p { font-size: 24px; }
+}
+
 .main-header-container {width: 450px; position: relative; left: 50%; transform: translateX(-50%); border-radius: 5px; margin-bottom: 64px;}
 @media screen and (max-width: 470px) {
 	.main-header-container {width: 400px;}
+	.card {height: 300px!important;}
 }
 @media screen and (max-width: 420px) {
 	.intro-heading h1 {font-size: 45px;}
@@ -34,12 +54,13 @@ body {padding: 0; margin: 0; text-align: center; font-family: 'Cabin', sans-seri
 .speakers { padding: 32px 16px 40px 16px; }
 .card { width: 100%; height: 300px; order-radius: 20px 20px 0px 0px; background-size: cover; background-repeat: no-repeat; }
 .card-container { position: relative; }
-.card-container h3 { color: #5b32b4; }
+.card-container h3 { colo: #5b32b4; color: #222; }
 .card-container p { color: #726a84; margin-top: 0px; }
 
 .contact { padding: 32px 70px; }
 .contact-container h2 { color: #444; }
 .contact-container p { color: #454545; }
+i { font-size: 28px; padding-left: 15px; padding-right: 15px;}
 
 /*.overlay-info { position: absolute; z-index: 5; height: 300px; background: #5b32b4; transition: transform 0.5s linear; display: none;}
 .overlay-info > div { position: relative; z-index: 5; top: 50%; transform: translateY(-50%);}
