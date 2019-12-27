@@ -7,9 +7,38 @@
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="w3.css">
+
+<!-- 	<script src="https://unpkg.com/scrollreveal"></script>
+	<script type="text/javascript">
+		ScrollReveal({
+    	scale: 0.85,
+    	duration: 1000,
+		});
+	</script> -->
 	<script src="https://kit.fontawesome.com/829418fca4.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		#loader{position: fixed; top: 0; left: 0; z-index: 999; background: rgba(0,0,0, 0.9); width: 99.99vw; height: 99.99vh; overflow: hidden;}
+		#loaderCircle {
+  		position: absolute; left: 50%; top: 50%;
+  		transform: translate(-50%, -50%);
+	  	width: 80px; height: 80px;
+  		/*margin: -50px 0 0 -50px;*/
+  		border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid rgb(254,0,0); border-left: 10px solid rgb(254,0,0); ;
+  		-webkit-animation: spin 2s linear infinite;
+  		animation: spin 2s linear infinite;
+		}
+
+		@keyframes spin {
+  		0% { transform: translate(-50%, -50%) rotate(0deg); }
+  		100% { transform: translate(-50%, -50%) rotate(360deg); }
+		}
+	</style>
 </head>
-<body>
+<body onload="stopLoader()">
+	<div id="loader">
+		<div id="loaderCircle"></div>
+	</div>
 	<div class="container-home">
 		<!-- navbar start -->
 		<div class="nav-container">
@@ -306,6 +335,20 @@ function w3_open() {
 function w3_close() {
 	document.getElementById("mySidebar").style.display = "none";
 }
+
+// ScrollReveal().reveal('.main-header-container');
+// ScrollReveal().reveal('.nav-container');
+// ScrollReveal().reveal('.intro-heading');
+// ScrollReveal().reveal('.about-img');
+// ScrollReveal().reveal('.about-text');
+// ScrollReveal().reveal('.card');
+// ScrollReveal().reveal('.w3-third');
+
+function stopLoader(){
+	document.getElementById("loader").style.display = "none";
+	document.getElementById("loaderCircle").style.display = "none";
+}
+
 </script>
 
 </body>
