@@ -4,9 +4,27 @@
 	<title>Conferenza | Tecnoesis</title>
 	<link rel="icon" href="images/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+		<style type="text/css">
+		#loader{position: fixed; top: 0; left: 0; z-index: 999; background: rgba(0,0,0, 0.9); width: 99.99vw; height: 99.99vh; overflow: hidden;}
+		#loaderCircle {
+  		position: absolute; left: 50%; top: 50%;
+  		transform: translate(-50%, -50%);
+	  	width: 80px; height: 80px;
+  		border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid rgb(254,0,0); border-left: 10px solid rgb(254,0,0); ;
+  		animation: spin 4s linear infinite;
+  		animation-fill-mode: forwards;
+		}
+
+		@keyframes spin {
+  		0% { transform: translate(-50%, -50%) rotate(0deg); }
+  		50% { transform: translate(-50%, -50%) rotate(180deg); }
+  		60% { transform: translate(-50%, -50%) rotate(0deg); }
+  		100% { transform: translate(-50%, -50%) rotate(-360deg); }
+		}
+	</style>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- 	<script src="https://unpkg.com/scrollreveal"></script>
@@ -16,25 +34,6 @@
     	duration: 1000,
 		});
 	</script> -->
-	<!-- <script src="https://kit.fontawesome.com/829418fca4.js" crossorigin="anonymous"></script> -->
-
-	<style type="text/css">
-		#loader{position: fixed; top: 0; left: 0; z-index: 999; background: rgba(0,0,0, 0.9); width: 99.99vw; height: 99.99vh; overflow: hidden;}
-		#loaderCircle {
-  		position: absolute; left: 50%; top: 50%;
-  		transform: translate(-50%, -50%);
-	  	width: 80px; height: 80px;
-  		/*margin: -50px 0 0 -50px;*/
-  		border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid rgb(254,0,0); border-left: 10px solid rgb(254,0,0); ;
-  		-webkit-animation: spin 2s linear infinite;
-  		animation: spin 2s linear infinite;
-		}
-
-		@keyframes spin {
-  		0% { transform: translate(-50%, -50%) rotate(0deg); }
-  		100% { transform: translate(-50%, -50%) rotate(360deg); }
-		}
-	</style>
 </head>
 <body onload="stopLoader()">
 	<div id="loader">
