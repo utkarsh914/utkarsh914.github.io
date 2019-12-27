@@ -1,8 +1,8 @@
 body {padding: 0; margin: 0; text-align: center; font-family: 'Cabin', sans-serif!important; background: rgb(255, 254, 254);}
 a {text-decoration: none;}
-.container-home{ height: 100vh; text-align: center; background-image: url('images/background_final.jpg'); background-size: cover; background-position: center;}
+.container-home{ height: 100vh; text-align: center; background-image: url('images/background_final.jpg'); background-attachment: fixed; background-size: cover; background-position: center;}
 
-.nav-container { display: inline-block; padding: 0px 16px; width: 100%; position: fixed; left: 0; top: 0; background: black; z-index: 999;}
+.nav-container { display: inline-block; padding: 0px 16px 8px; width: 100%; position: fixed; left: 0; top: 0; background: black; z-index: 999;}
 .nav-bar {display: inline-block; height: 60px;}
 .bar-item { display: inline-block; height: 60px; float: left; padding: 8px 16px; line-height: 60px; font-size: 18px;}
 #hamburger-toggle {display: none!important;}
