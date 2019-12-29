@@ -42,25 +42,25 @@
 	<div id="loader">
 		<div id="loaderCircle"></div>
 	</div>
-	<div class="container-home">
+	<div class="container-home" id="home">
 		<!-- navbar start -->
-		<div class="nav-container">
+		<div class="nav-container w3-card-4">
 			<div class="bar-item" style="float: left;"><img src="images/logo_white.png" height="60px" width="220px"></div>
 			<div class="nav-bar w3-text-white">
+				<div class="bar-item"><a href="#home">Home</a></div>
 				<div class="bar-item"><a href="#about">About</a></div>
-				<div class="bar-item"><a href="#speakers">Our Guests</a></div>
 				<div class="bar-item"><a href="#prev-speakers">Previous Speakers</a></div>
 				<div class="bar-item"><a href="#contact">Contact Us</a></div>	
 			</div>
 
-			<button id="hamburger-toggle" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
+			<button id="hamburger-toggle" class="w3-button w3-xlarge w3-right w3-card-4" onclick="w3_open()" style="background: transparent; color: white;">&#9776;</button>
 			
 			<div class="w3-sidebar w3-bar-block w3-collaps w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
-				<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
-				<a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">About</a>
-				<a href="#speakers" class="w3-bar-item w3-button" onclick="w3_close()">Our Guests</a>
-				<a href="#prev-speakers" class="w3-bar-item w3-button" onclick="w3_close()">Previous Speakers</a>
-				<a href="#contact" class="w3-bar-item w3-button" onclick="w3_close()">Contact</a>
+				<button class="w3-bar-item w3-button w3-large" onclick="w3_close()" style="background: #cc1111; color: white;">Close &times;</button>
+				<a href="#home" class="w3-bar-item w3-button w3-hover-indigo" onclick="w3_close()">Home</a>
+				<a href="#about" class="w3-bar-item w3-button w3-hover-indigo" onclick="w3_close()">About</a>
+				<a href="#prev-speakers" class="w3-bar-item w3-button w3-hover-indigo" onclick="w3_close()">Previous Speakers</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hover-indigo" onclick="w3_close()">Contact</a>
 			</div>
 
 

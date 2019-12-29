@@ -32,7 +32,7 @@ a {text-decoration: none;}
 
 
 .main-header-container { width: 450px; position: relative; left: 50%; transform: translateX(-50%); border-radius: 5px; margin-bottom: 100px; background-image: linear-gradient(120deg , #00004d, #ccccff); color: white;}
-.main-header-container:hover{box-shadow:0 4px 10px 0 rgba(102, 0, 102,0.3),0 4px 20px 0 rgba(102, 0, 102,0.3)}
+.main-header-container:hover{box-shadow:0 4px 10px 0 rgba(77, 0, 77,0.3),0 4px 20px 0 rgba(77, 0, 77,0.3)}
 @media screen and (max-width: 470px) {
 	.main-header-container {width: 400px;}
 	.card {height: 300px!important;}
