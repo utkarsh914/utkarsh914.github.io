@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Android Tab</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/player.css">
+	
+	
+</head>
+<body>
+<div class="phone-body">
+<button id="power-btn" onclick="poweroffandon()"></button>
+<button class="home-btn" onclick='gohome()'></button>
+<div id="phone-display" class="phone-display-on">
+	<table id="icon-container" style="width:">
+		<tr>
+			<td style="width: 22%"></td>
+			<td><img src="icons/Phone-icon.png" alt="Dialer" class="icon" id='dialer' onclick="document.getElementById('dialer-display').style.display='block'" /><br>Dialer</td>
+
+			<td><img src="icons/Contacts-icon.png" alt="Contacts" class="icon" id='contacts' onclick="document.getElementById('contacts-display').style.display='block'" /><br>Contacts</td>
+
+			<td><img src="icons/music.png" alt="Music" class="icon" id='google' onclick="document.getElementById('music-display').style.display='block'" /><br>Music</td>
+
+			<td><img src="icons/appicns_Chrome.png" alt="Chrome" class="icon" id='chrome' onclick="document.getElementById('chrome-display').style.display='block'" /><br>Browser</td>
+
+			<td><img src="icons/News-And-Weather-icon.png" alt="News" class="icon" id='news' onclick="document.getElementById('news-display').style.display='block'"/><br>News</td>
+
+			<td><img src="icons/Settings-icon.png" alt="Settings" class="icon" id='settings' onclick="document.getElementById('settings-display').style.display='block'" /><br>Settings</td>
+			<td style="width: 22%"></td>
+		</tr>
+	</table>
+
+
+</div>
+
+<div id="dialer-display" class="closable">
+	<div class="contacts-container" id="dialer-left-pane">
+		<h2 style="font-family: verdana;">MY CONTACTS</h2>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Walter White</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Jesse Pinkman</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Mike Ehrmentraut</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Guss Fring</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Skyler White</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Hank Schrader</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Saul Goodman</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Marie Schrader</div>
+		<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Jane Margolis</div>
+	</div>
+	<div class="numpad-container">
+		<div class="numpad-top"></div>
+		<div class="numpad-table-container">
+		<table id="numpad-table">
+			<tr>
+				<td class="numpad-btn left-numpad-btn">1</td>
+				<td class="numpad-btn mid-numpad-btn">2</td>
+				<td class="numpad-btn right-numpad-btn">3</td>
+			</tr>
+			<tr>
+				<td class="numpad-btn left-numpad-btn">4</td>
+				<td class="numpad-btn mid-numpad-btn">5</td>
+				<td class="numpad-btn right-numpad-btn">6</td>
+			</tr>
+			<tr>
+				<td class="numpad-btn left-numpad-btn">7</td>
+				<td class="numpad-btn mid-numpad-btn">8</td>
+				<td class="numpad-btn right-numpad-btn">9</td>
+			</tr>
+			<tr>
+				<td class="numpad-btn left-numpad-btn">*</td>
+				<td class="numpad-btn mid-numpad-btn">0</td>
+				<td class="numpad-btn right-numpad-btn">#</td>
+			</tr>
+			<tr style="height: 25%">
+				<td class="numpad-btn left-numpad-btn">-</td>
+				<td class="numpad-btn mid-numpad-btn" id="call-btn"><img src="icons/numpad-dial.png" style="width: 70px; height: 70px;"></td>
+				<td class="numpad-btn right-numpad-btn">-</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+</div>
+
+<!-- Contacts app    -->
+<div id="contacts-display" class="closable">
+	<h2 style="font-family: verdana;">MY CONTACTS</h2>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Walter White</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Jesse Pinkman</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Mike Ehrmentraut</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Guss Fring</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Skyler White</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Hank Schrader</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-m.png' class="profileImg"/>Saul Goodman</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Marie Schrader</div>
+	<div class="contacts-paragraph"><img src='icons/avatar-f.png' class="profileImg"/>Jane Margolis</div>
+</div>
+
+
+<div id="music-display" class="closable">
+	<div id="bg">
+        <img src="posters/Poster1.jpg"/>
+    </div>
+       
+    <div id="main">
+    	<div id="songTitle">Demo</div>
+        <div id="buttons">
+            <button id="pre" onclick="pre()"><img src="icons/Pre.png" height="90%" width="90%"/></button>
+            <button id="play" onclick="playOrPauseSong()"><img src="icons/Pause.png"/></button>
+            <button id="next" onclick="next()"><img src="icons/Next.png" height="90%" width="90%"/></button>
+        </div>
+        
+        <div id="seek-bar">
+            <div id="fill"></div>
+            <div id="handle"></div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="chrome-display" class="closable">
+	<iframe src="https://www.bing.com"></iframe>
+</div>
+
+<div id="news-display" class="closable">
+	<iframe src="https://www.bing.com/news?FORM=Z9LH4"></iframe>
+</div>
+
+<div id="settings-display" class="closable" style="text-align: center;">
+	<h1 style="font: 70px bold, verdana;">SETTINGS</h1>
+	<p style="font: 30px verdana;">Under Construction!</p>
+</div>
+
+</div>
+</div>
+</body>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>

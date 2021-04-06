@@ -1,14 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Utkarsh Tiwari | Home</title>
-	<link rel="icon" href="user.png">
-</head>
-<frameset border="0" rows="100%,*" cols="100%" frameborder="no">
-<frame name="TopFrame" scrolling="yes" noresize src="https://tiwariutkarsh914.000webhostapp.com">
-<frame name="BottomFrame" scrolling="no" noresize>
-<noframes></noframes>
-</frameset>
+<html>
+<title>Utkarsh Tiwari | Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/user.png">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+
+<style>
+html { scroll-behavior: smooth; }
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+a {text-decoration: none;}
+.img-container {margin-top:16px;}
+.w3-half img{opacity:1;cursor:pointer}
+.w3-half h5{margin-bottom:10px; margin-top: 0px; padding: 6px; backgroun: aqua;}
+
+.w3-btn{width: 140px;}
+.overlay-container {position: relative;}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:#fff;background-color:#2980b9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay-container:hover .overlay {height: 100%;}
+.text {
+  width: 80%;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding w3-card-4" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  
+  <div class="w3-container">
+    <h3 class="w3-padding-48"><b>Navigate</b><a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-blue w3-hide-large w3-right" style="width:55px;font-size:22px;">x</a></h3>
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-indigo w3-xlarge w3-padding w3-card-4">
+  <a href="javascript:void(0)" class="w3-button w3-indigo w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Navigate</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-blu w3-flat-belize-hole w3-center w3-card-4" style="padding-top:80px; padding-bottom: 75px; margin-top: 40px;" id="home">
+    <h1 class="w3-jumbo"><b>Utkarsh Tiwari</b></h1>
+  </div>
+  
+  <!-- About -->
+  <div class="w3-container" id="about">
+    <h1 class="w3-xxxlarge w3-text-blue-gray"><b>About</b></h1>
+    <p>
+      I'm a pre final year NIT Silchar undergraduate who has a passion for learning and exploring new things.<br>
+      My areas of interest include front-end and back-end web development.<br>
+      Currently improving my data structures and algorithms skills.
+    </p>
+    <p><b>Resume</b>: <a style="color: blue;" target="_blank" href="https://drive.google.com/drive/folders/1eTOGE00WWwrAfFampyJvB5WgZUGjZMsw?usp=sharing">link</a></p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-container" id="projects">
+  <h1 class="w3-xxxlarge w3-text-blue-gray"><b>Projects</b></h1>
+  </div>
+  <div class="w3-row-padding">
+
+    <div class="w3-half w3-center">
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/xbribe.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay w3-flat-peter-river">
+            <div class="text">
+              <p>Built a sophisticated web platform to easily report and track bribery cases from Xbribe website as well as Xbribe android app</p>
+              <p>Built a REST api for Xbribe android app to report complaints and access other features of the platform.</p>
+              <p>Website consisted of three portals - Public, Admin, and Ministry</p>
+              <a href="https://xbribe.herokuapp.com/" target="_blank"><div class="w3-btn w3-white">Visit</div></a>
+              <a href="https://github.com/utkarsh914/Xbribe" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>XBribe - Bribery Reporting Platform</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/serp-extended.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>An npm module to execute search on Google with or without proxies. It provides different options for scraping the google results.</p>
+              <a href="https://www.npmjs.com/package/serp-extended" target="_blank"><div class="w3-btn w3-white">Visit</div></a>
+              <a href="https://github.com/utkarsh914/serp-extended" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Serp-Extended</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/music-downloader.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>A node Js backed web app to download songs using a simple text search.</p>
+              <!-- <a href="#" target="_blank"><div class="w3-btn w3-white">Visit</div></a> -->
+              <a href="https://github.com/utkarsh914/music-downloader" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Music - DL</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/whatsapp-stalker.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>A js script to track the online and offline activity of a target on whatsapp irrespective of their hidden last seen.</p>
+              <p>Made a chrome extension for the same work too.</p>
+              <!-- <a href="https://github.com/utkarsh914/whatsapp-stalker" target="_blank"><div class="w3-btn w3-white">Visit</div></a> -->
+              <a href="https://github.com/utkarsh914/whatsapp-stalker" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Whatsapp Stalker</h5>
+      </div>
+
+    </div>
+
+    <div class="w3-half w3-center">
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/6.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+            	<p><b>ONGOING</b></p>
+              <p>Portal will allow users to maintain their profile, read, write, and rate articles, showcase their projects, and help them collaborate for projects with other members. We also plan to add point based rankings based on the quizzes and other activities organized by the club.</p>
+              <!-- <a href="projects/obiettivo/index.html" target="_blank"><div class="w3-btn w3-white">Visit</div></a>
+              <a href="https://github.com/utkarsh914/obiettivo" target="_blank"><div class="w3-btn w3-white">Source</div></a> -->
+            </div>
+          </div>
+        </div>
+        <h5>Developer Students Club NIT Silchar web portal</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/plagiarism-check.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>A node js backed web app which checks for plagiarism in the given text, and provides a detailed report per line of the given text</p>
+              <a href="#" target="_blank"><div class="w3-btn w3-white">Visit</div></a>
+              <a href="https://github.com/utkarsh914/plagiarism-detector" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Plagiarism detector</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/spotify-downloader.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>A website to download spotify songs with spotify link</p>
+              <!-- <a href="https://tiwariutkarsh914.000webhostapp.com/projects/spotify-downloader/index.php" target="_blank"><div class="w3-btn w3-white">Visit</div></a> -->
+              <a href="https://github.com/utkarsh914/spotify-downloader" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Spotify Downloader</h5>
+      </div>
+
+      <div class="img-container w3-card-4">
+        <div class="overlay-container">
+          <img src="img/tab.jpg" style="width:100%" alt="nitshub">
+          <div class="overlay">
+            <div class="text">
+              <p>An attempt to emulate few features of real Android Tablet on web</p>
+              <a href="projects/android-tab/index.html" target="_blank"><div class="w3-btn w3-white">Visit</div></a>
+              <a href="https://github.com/utkarsh914/android-tab" target="_blank"><div class="w3-btn w3-white">Source</div></a>
+            </div>
+          </div>
+        </div>
+        <h5>Android Tab</h5>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-gray"><b>Contact</b></h1>
+    <p>Wanna contact me? Fill up the form!</p>
+    <form action="contact.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" pattern="^[a-zA-Z0-9 ]*$" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" pattern="^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-indigo w3-margin-bottom w3-card-4">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+  <!-- W3.CSS Container -->
+  <div class="w3-blu w3-flat-belize-hole w3-container w3-padding-32 w3-card w3-center" style="margin-top:75px; margin-bottom: 40px;padding-right:58px">
+    <p>&copy Utkarsh Tiwari | 2021</p>
+    <footer class="w3-content w3-padding w3-xlarge">
+    <a href="https://twitter.com/utkarsh914"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <!-- <a href="https://instagram.com/utkarsh914"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
+    <a href="https://facebook.com/utkarsh914"><i class="fa fa-facebook w3-hover-opacity"></i></a>
+    <a href="https://t.me/utkarsh914"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+    <a href="https://github.com/utkarsh914"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://linkedin.com/utkarsh914"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </footer>
+  </div>
+</div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
 </html>

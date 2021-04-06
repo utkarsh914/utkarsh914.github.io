@@ -1,0 +1,173 @@
+body{
+	margin: 0; padding:0;
+	text-align: center;
+	overflow: hidden;
+	background: -webkit-linear-gradient(-30deg, #669999 10%, #ccffff 100%);
+}
+iframe{
+	border-radius: 2vh;
+	border:none;
+	width: 100%; height: 100%;
+}
+.phone-body{
+	height: 94vh; width: 80vw;
+	background-color: black;
+	border-radius: 3vh;
+	position: absolute;
+	margin: 3vh 10vw;
+}
+.phone-display-on{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #d90066 10%, #7a2eb8 50%, #0d0066 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+}
+.phone-display-off{
+	height: 83vh; width: 76vw;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#power-btn{
+	display: inline-block;
+	background: black;
+	width: 2vh; height: 7vh;
+	border: 0.1vh 0.1vh 0.1vh 0vh solid #eee; border-radius: 0 0.5vh 0.5vh 0;
+	position: absolute; right: -2vh; top: 15vh;
+	z-index: -99;
+}
+#power-btn:hover{
+	transform: scale(1.05);
+}
+.home-btn{
+	background: url("icon/btn-home.jpg");
+	background-size: cover;
+	position: absolute; bottom: 1vh;
+	display: inline-block; height: 5vh; width: 5vh; border-radius: 50%;
+	margin: auto -1.53%; cursor: pointer;
+}
+.home-btn:hover{
+	transform: scale(1.07);
+}
+#icon-container{
+	position: absolute; bottom: 1vh;
+	height: 12vh; width: 100%;
+	color: #eee; font: 2vh verdana;
+}
+.icon{
+	width: 10vh; height: 10vh;
+	cursor: pointer;
+}
+.icon:hover{
+	filter: invert(3%);
+	transform: scale(1.15);
+}
+#dialer-display{
+	height: 83vh; width: 76vw;
+	background: #eee;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+
+}
+#contacts-display{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #eff5f5 10%, #a3c2c2 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#music-display{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #eff5f5 10%, #a3c2c2 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#chrome-display{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #eff5f5 10%, #a3c2c2 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#news-display{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #eff5f5 10%, #a3c2c2 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#settings-display{
+	height: 83vh; width: 76vw;
+	background: -webkit-linear-gradient(120deg, #5c8a8a 10%, #293d3d 100%);
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	color: #eee; font: verdana;
+	display: none;
+}
+.contacts-container{
+	height: 100%; width: 50%;
+	display: inline-block;
+	position: absolute; left:0;
+	background: -webkit-linear-gradient(120deg, #eff5f5 10%, #a3c2c2 100%);
+	border-radius: 2vh 0 0 2vh;
+}
+.numpad-container{
+	display: inline-block;
+	width: 50%; height: 100%;
+	position: absolute; right: 0px;
+	box-shadow: -8px 0px 50px -5px #888;
+}
+.numpad-top{
+	display: inline-block;
+	background: -webkit-linear-gradient(45deg, #4d4dff 20%, #8080ff 100%);
+	width: 100%; height: 30%;
+	position: absolute; top: 0px; left: 0px;
+	border-radius: 0vh 2vh 0 0vh;
+}
+#numpad-table{
+	height: 70%; width: 100%;
+	position: absolute; right: 0; bottom:0;
+	border-collapse: collapse;
+}
+.numpad-table-container{
+	border-radius: 0vh 0vh 2vh 0vh;
+	box-shadow: 0px -6px 50px -5px #888;
+}
+.numpad-btn{
+	cursor: pointer;
+	font-size: 3vw; font-family: arial;
+	color: blue;
+	background-color: #eee;
+}
+.numpad-btn:hover{
+	background-color: #ddd;
+}
+.left-numpad-btn{
+	padding-left: 10%;
+	width: 32%;
+}
+ .mid-numpad-btn{
+ 	width: 36%;
+ }
+.right-numpad-btn{
+	padding-right: 12%;
+	width: 32%;
+}
+#call-btn:hover{transform: scale(1.2); background: transparent;}
+
+.contacts-paragraph{
+	font: 3vh verdana;
+	display: flex;
+	height: 8vh; width: 96%;
+	align-items: center; align-content: center;
+	padding: 0vh 3vh;
+}
+.contacts-paragraph:hover{
+	background: -webkit-linear-gradient(90deg, #8080ff 10%, #4d4dff 90%);
+	border-radius: 0.5vh;
+}
+.profileImg{
+	width: 7vh; height: auto;
+	margin: 0.5vh 5vh 0.5vh 3vh;
+}
